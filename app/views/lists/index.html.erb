@@ -1,0 +1,8 @@
+<%# home page %>
+<h2 class="page-header">Welcome Back to Your Watch List</h2>
+   <%= link_to "+ Add New List", new_list_path, class:"btn-primary"%>
+      <div class="grid">
+        <% @lists.each do |list| %>
+              <%= render "movie_list_card", list: list %>
+              <%end %>
+      </div>

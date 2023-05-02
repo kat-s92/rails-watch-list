@@ -1,0 +1,29 @@
+.movies-container{
+  display: flex;
+  flex-direction: column;
+  gap:64px;
+  margin-top:32px;
+  margin-bottom:32px;
+}
+
+.movie-img{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  // display: grid;
+  grid-column: 2/3;
+  grid-row: 1/ span 2;
+}
+
+.movie-img img{
+  width: 100%;
+  position: absolute;
+}
+
+.btn-primary {
+  margin-right: 16px;
+}
+
+.btn-secondary {
+ justify-self: start;
+}

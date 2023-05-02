@@ -1,0 +1,8 @@
+<h2 class="page-header"> <%= @list.name %></h2>
+<%= link_to "+ Add Movie ", new_list_bookmark_path(@list), class:"btn-primary"%>
+<%= link_to "Delete List", list_path(@list), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?"}, class:"btn-primary"%>
+<div class="movies-container">
+   <% @list.movies.each do |movie| %>
+   <%= render "movie_card", movie: movie %>
+                 <%end %>
+</div>

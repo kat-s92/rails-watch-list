@@ -1,0 +1,16 @@
+<div class="movie-card">
+  <div class="movie-info">
+    <% bookmark = Bookmark.find_by(list: @list, movie:movie) %>
+    <h5 class="primary-header"> <%= movie.title %></h5>
+   <li>Rating: ⭐️
+    <%= movie.rating %>
+    </li>
+  <p>Movie Overview <br/>
+    <%= movie.overview %>
+  </p>
+  </div>
+   <div class="movie-img">
+    <%= image_tag 'movie-img.jpg'%>
+   </div>
+    <%= link_to "Delete Movie ", list_bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class:'btn-secondary'%>
+   </div>

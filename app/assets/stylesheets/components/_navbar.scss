@@ -1,0 +1,19 @@
+.navbar-container {
+  // justify-content: space-between;
+  background: black;
+  color:white;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  box-shadow: rgba(216, 216, 216, 0.2) 0px 2px 8px 0px;
+}
+
+.avatar{
+  border: 2px solid white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 64px;
+  margin:0;
+}
